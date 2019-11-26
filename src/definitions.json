@@ -1,0 +1,41 @@
+{
+  "address": {
+    "42": {
+      "TestDani": "0x17B5e04938cc4D0CCb2943A628d733F03587779D"
+    }
+  },
+  "abi": {
+    "TestDani": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "x",
+            "type": "uint256"
+          }
+        ],
+        "name": "set",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "get",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ]
+  }
+}

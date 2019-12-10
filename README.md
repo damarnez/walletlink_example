@@ -5,7 +5,7 @@ This is a small test to connect walletlink and metamask, actually walletlink exa
 # Steps
 
 - npm i
-- REACT_APP_INFURA_KEY=<<YOUR KEY>> npm start
+- REACT_APP_INFURA_KEY=YOUR_KEY npm start
 - Click button "Connect Wallet WalletLink"
 - Connect your wallet
 - Click button "Set Num"

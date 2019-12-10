@@ -5,7 +5,7 @@ import definitions from "./definitions.json";
 import Web3 from "web3";
 function App() {
   const [web3, setWeb3] = useState(null);
-  const [magicNumber] = useState(Math.ceil(Math.random() * 10));
+  const [magicNumber] = useState(Math.ceil(Math.random() * 100));
   const [address, setAddress] = useState(null);
   const [contracts, setContracts] = useState(null);
 
@@ -40,10 +40,20 @@ function App() {
   };
 
   const handleSetNum = async () => {
-    await contracts.TestDani.methods.set(magicNumber).send({
-      from: address,
-      gas: 100000
-    });
+    await contracts.TestDani.methods.set(magicNumber).send(
+      {
+        from: address
+      },
+      () => {
+        console.log(" QUE COÑAZZZOOOOOOO");
+      }
+    );
+    // .on("transactionHash", function(hash) {
+    //   console.log(" HASH : ", hash);
+    // });
+    console.log(
+      "########################### FINISH? COÑO JODERRRRRRRR ###################################"
+    );
   };
 
   const handleGetNum = async () => {
